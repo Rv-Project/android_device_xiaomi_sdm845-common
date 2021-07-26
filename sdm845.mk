@@ -279,6 +279,8 @@ PRODUCT_PACKAGES += \
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/partitions/flash_super_dummy.sh:install/bin/flash_super_dummy.sh
 
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
