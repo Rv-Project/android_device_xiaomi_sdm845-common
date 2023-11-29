@@ -245,7 +245,8 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libsfplugin_ccodec_utils.vendor \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_foundation-v33
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
