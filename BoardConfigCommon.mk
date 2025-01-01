@@ -51,10 +51,6 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Graphics
-TARGET_USES_GRALLOC1 := true
-TARGET_USES_HWC2 := true
-TARGET_USES_ION := true
-
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
@@ -69,6 +65,9 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
 # LMKD
 TARGET_LMKD_STATS_LOG := true
+
+# Media
+TARGET_USES_ION := true
 
 # Partitions
 AB_OTA_UPDATER := false
