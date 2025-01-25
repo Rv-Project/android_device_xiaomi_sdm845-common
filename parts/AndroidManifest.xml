@@ -43,10 +43,11 @@
         </receiver>
 
         <activity
-            android:name=".speaker.ClearSpeakerActivity" 
+            android:name=".speaker.ClearSpeakerActivity"
             android:exported="false"
             android:label="@string/clear_speaker_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:theme="@style/Theme.SubSettingsBase"
+            android:enableOnBackInvokedCallback="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -65,7 +66,8 @@
         <activity
             android:name=".doze.DozeSettingsActivity"
             android:exported="false"
-            android:label="@string/ambient_display_title">
+            android:label="@string/ambient_display_title"
+            android:enableOnBackInvokedCallback="true">
             <intent-filter>
                 <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -75,7 +77,8 @@
         <activity
             android:name=".thermal.ThermalActivity"
             android:exported="false"
-            android:label="@string/thermal_title">
+            android:label="@string/thermal_title"
+            android:enableOnBackInvokedCallback="true">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
