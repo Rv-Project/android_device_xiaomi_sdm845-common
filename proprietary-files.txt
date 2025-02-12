@@ -112,7 +112,7 @@ vendor/bin/init.qti.chg_policy.sh
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # CNE
-vendor/app/CneApp/CneApp.apk
+vendor/app/CneApp/CneApp.apk;NODEXPO
 vendor/bin/cnd
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
@@ -224,7 +224,7 @@ system_ext/lib64/libdpmctmgr.so|9d13e5ae9882f5b7e6ac31a9d073a66a27d1c465
 system_ext/lib64/libdpmfdmgr.so|b705b098462e1198fc24175732d687142cc26562
 system_ext/lib64/libdpmframework.so|c3d8d6f1745c19d29466e9de823ff56f9f8f6993
 system_ext/lib64/libdpmtcm.so|57b6c42d581305d8ef16aa127cd4cd1672d2e7f1
-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|1850acd0249751c5bcfba2e0bebcbe52c766a79c
+system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk;NODEXPO|1850acd0249751c5bcfba2e0bebcbe52c766a79c
 vendor/bin/dpmQmiMgr|2da835936abc23f39903e68a63c5e7303edac1e7
 vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|3a407eb9cfe4bda97d793d0b671389aee7afe48f
@@ -329,13 +329,13 @@ vendor/lib/hw/vulkan.adreno.so|b2680e5b899d75fa3f82b457635e15c6998202a4
 vendor/lib64/hw/vulkan.adreno.so|fcc99045aaf7eed0925ac2b64ff2af085212954a
 
 # Hotword enrollment
-product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk|1cbc6ae6490cfc6e16619773809b9afcc9998f91
-product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk|24b4885a1f9194c65f378a2afd8e08b4b11842d8
+product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk;NODEXPO|1cbc6ae6490cfc6e16619773809b9afcc9998f91
+product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk;NODEXPO|24b4885a1f9194c65f378a2afd8e08b4b11842d8
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|bef92589e75a6da6043f85f4b9b0e85866429624
 
 # IMS
-product/app/uceShimService/uceShimService.apk:system_ext/app/uceShimService/uceShimService.apk
+product/app/uceShimService/uceShimService.apk:system_ext/app/uceShimService/uceShimService.apk;NODEXPO
 product/lib64/com.qualcomm.qti.imscmservice@1.0.so:system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so
 product/lib64/com.qualcomm.qti.imscmservice@2.0.so:system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so
 product/lib64/com.qualcomm.qti.imscmservice@2.1.so:system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so
@@ -357,7 +357,7 @@ product/lib64/vendor.qti.ims.callinfo@1.0.so:system_ext/lib64/vendor.qti.ims.cal
 product/lib64/vendor.qti.ims.rcsconfig@1.0.so:system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so:system_ext/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so:system_ext/lib64/vendor.qti.imsrtpservice@2.1.so
-product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk
+product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk;NODEXPO
 system/lib64/libdiag_system.so:system_ext/lib64/libdiag_system.so
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
@@ -467,7 +467,7 @@ vendor/lib/libperipheral_client.so
 vendor/lib/libspcom.so
 
 # Power-off alarm - from caymanslm - SKQ1.211103.001
-product/app/PowerOffAlarm/PowerOffAlarm.apk:system_ext/app/PowerOffAlarm/PowerOffAlarm.apk|f0a86fc11b38c059912303857bc4c79155430bcc
+product/app/PowerOffAlarm/PowerOffAlarm.apk:system_ext/app/PowerOffAlarm/PowerOffAlarm.apk;NODEXPO|f0a86fc11b38c059912303857bc4c79155430bcc
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|37b4999095331f4f3dd6c118ee0bdea4bdf7f003
 vendor/bin/power_off_alarm|04e651db91ca2598f1bf50453fdb49a63463b2dc
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
@@ -515,12 +515,12 @@ vendor/lib/libqminvapi.so
 vendor/lib/libqmiservices.so
 
 # RIL
-product/app/QtiTelephonyService/QtiTelephonyService.apk:system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+product/app/QtiTelephonyService/QtiTelephonyService.apk:system_ext/app/QtiTelephonyService/QtiTelephonyService.apk;NODEXPO
 product/etc/permissions/qcrilhook.xml:system_ext/etc/permissions/qcrilhook.xml
 product/framework/qcrilhook.jar:system_ext/framework/qcrilhook.jar
 product/framework/qti-telephony-common.jar:system_ext/framework/qti-telephony-common.jar
-product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-vendor/app/IWlanService/IWlanService.apk
+product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk;NODEXPO
+vendor/app/IWlanService/IWlanService.apk;NODEXPO
 vendor/bin/hw/qcrild
 vendor/bin/adpl
 vendor/bin/pd-mapper
@@ -671,7 +671,7 @@ vendor/lib/libscvePanorama_lite.so
 vendor/lib/libscveScan3D.so
 
 # Soter
-vendor/app/SoterService/SoterService.apk
+vendor/app/SoterService/SoterService.apk;NODEXPO
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
@@ -683,7 +683,7 @@ vendor/lib64/libthermalclient.so
 vendor/lib/libthermalclient.so
 
 # Time services
-vendor/app/TimeService/TimeService.apk
+vendor/app/TimeService/TimeService.apk;NODEXPO
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
@@ -781,7 +781,7 @@ system_ext/lib64/libwfduibcsink.so|626cd1be5dcb131dc4b3ed53ed193fa082a0c617
 system_ext/lib64/libwfduibcsinkinterface.so|6294b53eced077983e5ddab21ec41a4b2d07d566
 system_ext/lib64/libwfduibcsrc.so|67630b36b0a75ceb0cb32d51b8254b0d2b6d6f92
 system_ext/lib64/libwfduibcsrcinterface.so|af85a58083be7e57be2fa062f9102c89278ad848
-system_ext/priv-app/WfdService/WfdService.apk|a45fce386941b8f1d282ccf268fef24a2d589933
+system_ext/priv-app/WfdService/WfdService.apk;NODEXPO|a45fce386941b8f1d282ccf268fef24a2d589933
 
 # WiFi Display (vendor) - from PNX - RKQ1.200906.002
 vendor/bin/wfdhdcphalservice|c7a2d70190d8a90a8ed326af0add5cf7c99d1ab6
