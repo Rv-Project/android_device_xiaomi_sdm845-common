@@ -7,3 +7,5 @@ type gps_device, dev_type;
 type sound_device, dev_type;
 
 type vbmeta_block_device, dev_type;
+
+type vendor_persist_block_device, dev_type;
